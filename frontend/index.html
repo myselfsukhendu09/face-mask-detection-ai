@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision AI | Face Mask Detector</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Face Mask Detection AI</h1>
+    </header>
+
+    <main>
+        <div class="video-container">
+            <div class="badge">
+                <div class="dot"></div>
+                LIVE FEED
+            </div>
+            <video id="webcam" autoplay playsinline></video>
+            <canvas id="overlay"></canvas>
+        </div>
+
+        <div class="controls">
+            <div class="status-card">
+                <h2>Detection Stats</h2>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value mask-count" id="mask-count">0</div>
+                        <div class="label">With Mask</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value no-mask-count" id="no-mask-count">0</div>
+                        <div class="label">No Mask</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instruction">
+                <strong>Real-world Vision AI:</strong> This system uses a deep learning model to detect faces and
+                classify them as masked or unmasked in real-time. Position yourself clearly in front of the camera.
+            </div>
+
+            <button class="btn-start" id="toggle-cam">
+                <span>Start AI Analysis</span>
+            </button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
