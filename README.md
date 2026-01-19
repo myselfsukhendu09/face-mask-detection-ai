@@ -31,8 +31,8 @@ Traditional face detection often fails when the face is occluded by a mask. This
 
 ## ⚙️ Quick Start
 1. **Dependencies**: `pip install -r requirements.txt`
-2. **Server**: `python main.py`
-3. **Web Interface**: Open `frontend/index.html` and grant webcam permissions.
+2. **Launch Streamlit Dashboard**: `streamlit run streamlit_app.py`
+3. **Alternative (API Service)**: `python main.py`
 
 ## ⚖️ Ethical AI
 This project follows privacy-by-design principles:
