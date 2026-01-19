@@ -1,37 +1,41 @@
 
-# Face Mask Detection AI
+# 🎭 Face Mask Detection AI (v1.0 Vision PRO)
 
-A real-world computer vision project that detects faces and classifies them as "Masked" or "No Mask" in real-time using a deep learning model.
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00.svg)](https://www.tensorflow.org/)
+[![MediaPipe](https://img.shields.io/badge/MediaPipe-Vision-00C853.svg)](https://google.github.io/mediapipe/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-Computer--Vision-5C3EE8.svg)](https://opencv.org/)
 
-## Features
-- **Real-time Detection**: Uses MediaPipe for robust face detection.
-- **Deep Learning**: MobileNetV2-based classification for high accuracy.
-- **Webcam Integration**: Live feed directly in the browser.
-- **Premium UI**: Dark-themed dashboard with live statistics and bounding box overlays.
+A professional-grade Computer Vision system designed to detect and classify facial masks in real-time. This project leverages **MediaPipe** for ultra-fast face detection and **TensorFlow/Keras** for binary mask classification.
 
-## Setup & Installation
+## 🚀 Innovation & Tech
+Traditional face detection often fails when the face is occluded by a mask. This project uses a **multi-stage pipeline**:
+1.  **Face Detection**: MediaPipe identifies face regions with high confidence even with occlusions.
+2.  **Preprocessing**: Dynamic ROI (Region of Interest) cropping and normalization for CNN input.
+3.  **Classification**: A specialized deep learning model trained to distinguish between "Masked" and "No Mask" faces.
 
-### 1. Backend
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Run the API server:
-   ```bash
-   python main.py
-   ```
-   The API will be available at `http://localhost:8001`.
+## 🌐 Use Cases
+*   **Public Safety**: Automated compliance monitoring in transport hubs.
+*   **Healthcare**: Ensuring protocol adherence in clinical environments.
+*   **Security**: Integrated biometric access control.
 
-### 2. Frontend
-Simply open `frontend/index.html` in your browser. Ensure the backend is running.
+## 🛠️ Technical Deep Dive
+*   **Real-time Stream**: Optimized for low-latency webcam processing (~10-15 FPS on standard hardware).
+*   **API Integrity**: Backend ensures image validation before processing via FastAPI.
+*   **UI/UX**: Cyberpunk-themed dark dashboard with live HUD (Heads-Up Display) overlays.
 
-## Technology Stack
-- **Python**: TensorFlow/Keras, OpenCV, MediaPipe.
-- **API**: FastAPI, Uvicorn.
-- **Frontend**: HTML5, CSS3, JavaScript.
+## 📦 Tech Stack
+*   **Vision Core**: MediaPipe, OpenCV.
+*   **Deep Learning**: TensorFlow, Keras.
+*   **Infrastructure**: FastAPI (Asynchronous ML Inference).
+*   **Analytics**: NumPy, Image ROI Processing.
 
-## Ethical AI
-This project is designed for educational and safety purposes. Ensure compliance with local privacy laws regarding face detection and data storage.
+## ⚙️ Quick Start
+1. **Dependencies**: `pip install -r requirements.txt`
+2. **Server**: `python main.py`
+3. **Web Interface**: Open `frontend/index.html` and grant webcam permissions.
 
-## License
-MIT
+## ⚖️ Ethical AI
+This project follows privacy-by-design principles:
+*   No facial data is stored locally or on a server.
+*   Processing occurs in volatile memory.
+*   Transparent detection metrics provided to the user.
